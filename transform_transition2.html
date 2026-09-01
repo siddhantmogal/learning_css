@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Transform</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        .b_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .s_box {
+            height: 200px;
+            width: 200px;
+
+            background-color: deeppink;
+            color: white;
+
+            border: 5px solid gray;
+            border-radius: 10px;
+
+            margin: 20px;
+            padding: 20px;
+
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 20px;
+            font-weight: bold;
+
+            transition: all 2s ease;
+        }
+
+
+        /* 1. Translate */
+        .b1:hover {
+            transform: translate(100px, 50px);
+        }
+
+
+        /* 2. Translate X */
+        .b2:hover {
+            transform: translateX(100px);
+        }
+
+
+        /* 3. Translate Y */
+        .b3:hover {
+            transform: translateY(100px);
+        }
+
+
+        /* 4. Rotate */
+        .b4:hover {
+            transform: rotate(360deg);
+            background-color: chocolate;
+        }
+
+
+        /* 5. Skew */
+        .b5:hover {
+            transform: skew(30deg);
+        }
+
+
+        /* 6. Scale */
+        .b6:hover {
+            transform: scale(1.5);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="b_container">
+
+        <div class="s_box b1">
+            Translate
+        </div>
+
+        <div class="s_box b2">
+            Translate X
+        </div>
+
+        <div class="s_box b3">
+            Translate Y
+        </div>
+
+        <div class="s_box b4">
+            Rotate
+        </div>
+
+        <div class="s_box b5">
+            Skew
+        </div>
+
+        <div class="s_box b6">
+            Scale
+        </div>
+
+    </div>
+
+</body>
+
+</html>

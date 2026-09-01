@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Sections</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: lightgray;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container */
+        .container {
+            position: relative;
+            width: 700px;
+            height: 500px;
+            margin: 50px auto;
+            background-color: white;
+            border: 5px solid black;
+        }
+
+        /* Blue section */
+        .blue {
+            position: absolute;
+            width: 250px;
+            height: 200px;
+            background-color: blue;
+
+            left: 50px;
+            top: 50px;
+
+            z-index: 10;
+        }
+
+        /* Red section */
+        .red {
+            position: absolute;
+            width: 250px;
+            height: 200px;
+            background-color: red;
+
+            left: 200px;
+            top: 150px;
+
+            z-index: 12;
+        }
+
+        /* Green section */
+        .green {
+            position: absolute;
+            width: 250px;
+            height: 200px;
+            background-color: green;
+
+            left: 350px;
+            top: 250px;
+
+            z-index: 13;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="blue"></div>
+
+        <div class="red"></div>
+
+        <div class="green"></div>
+
+    </div>
+
+</body>
+
+</html>

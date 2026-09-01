@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media Query Example</title>
+
+    <style>
+
+        /* Normal CSS */
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        img {
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        /* Media Query for Mobile Screen */
+
+        @media (min-width: 320px) and (max-width: 767px) {
+
+            body {
+                background-color: aqua;
+            }
+
+            h1 {
+                color: red;
+                font-size: 25px;
+            }
+
+            h2 {
+                color: purple;
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                color: white;
+                padding: 20px;
+                border:4px solid red;
+            }
+
+            img {
+                width: 100%;
+            }
+            img{
+                display:none;
+            }
+
+        }
+        /* from 768px to up */
+        @media (min-width:780){
+            body{
+                background-color:black;
+                color: white;
+            }
+
+            /* from 1224px to up */
+        @media (min-width:1224){
+            body{
+                background-color:black;
+                color: white;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Hello, I am Siddhant Mogal</h1>
+
+    <h2>I am a Software Engineering Student</h2>
+
+    <p>
+        Reading books is one of the most rewarding habits a person can develop
+        because it opens the door to a world of endless knowledge and imagination.
+    </p>
+
+    <p>
+        When you open a book, you are instantly transported to different places,
+        eras, and cultures without ever leaving your seat.
+    </p>
+
+    <img src="images/himalaya.jpg" alt="Himalaya Image">
+
+</body>
+
+</html>

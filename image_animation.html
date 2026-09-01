@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+
+    <style>
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+
+            position: relative;
+
+            animation-name: movingbox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: alternate;
+
+            background-image: url("images/himalaya.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        @keyframes movingbox {
+
+            0% {
+               background-image: url("images/himalaya.jpg");
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-image: url("images/annapurna.webp");
+                left: 300px;
+                top: 0px;
+            }
+
+            50% {
+                background-image: url("images/natures.jpg");
+                left: 0px;
+                top: 30px;
+            }
+
+            75% {
+                background-image: url("images/abc.jpg");
+                left: 0px;
+                top: 300px;
+            }
+
+            100% {
+               background-image: url("images/himalaya.jpg");
+                left: 0px;
+                top: 0px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>

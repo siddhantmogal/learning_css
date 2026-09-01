@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Animation with Background</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            background-image: url("images/background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+
+            background-color: yellow;
+
+            position: relative;
+
+            animation-name: movingbox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes movingbox {
+
+            0% {
+                background-color: yellow;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: red;
+                left: 300px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: green;
+                left: 300px;
+                top: 300px;
+            }
+
+            75% {
+                background-color: blue;
+                left: 0px;
+                top: 300px;
+            }
+
+            100% {
+                background-color: yellow;
+                left: 0px;
+                top: 0px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>
